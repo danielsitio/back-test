@@ -1,0 +1,15 @@
+server:
+    port: 8090
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:6000/backend
+        username: postgres
+        password: 1234
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
+    servlet:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
